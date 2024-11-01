@@ -77,8 +77,8 @@ function TypewriterEffectSmoothDemo() {
 
 function Description() {
   return (
-    <article className="absolute bottom-10 text-center w-full bg-black pb-40">
-      <span className="text-3xl font-bold">What`&apos;`s In Bhasma? </span>
+    <article className="absolute bottom-10 text-center w-full pb-40">
+      <span className="text-3xl font-bold">What&apos;s In Bhasma? </span>
       <span className="text-2xl text-slate-400">
         Everything you need to make a secure app
       </span>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const SkeletonThree = () => {
   return (
     <Link
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+      href="https://www.youtube.com/@signalsensei"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
