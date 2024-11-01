@@ -9,7 +9,7 @@ const Warning = () => {
 
       <div className="line-clamp-2 text-red-500 text-center">
         Warning! This is under construction! and this is not for mobile phone
-        devices and never will be !
+        devices and never will be!
       </div>
       <div className="text-yellow-500 text-center">
         This is only available in darkmode
