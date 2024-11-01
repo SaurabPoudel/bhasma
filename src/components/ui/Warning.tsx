@@ -12,7 +12,8 @@ const Warning = () => {
         devices and never will be!
       </div>
       <div className="text-yellow-500 text-center">
-        This is only available in darkmode
+        This is only available in darkmode version and if your system is using
+        light mode, please switch to dark mode (feeling lazy now)
       </div>
     </div>
   );
