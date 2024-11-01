@@ -6,8 +6,8 @@ import { TypewriterEffectSmooth } from "../ui/TypewriterEffect";
 export function Hero() {
   return (
     <>
-      <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md ">
-        <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+      <div className="h-[100vh] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md pt-20 ">
+        <h1 className=" md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
           Bhasma
         </h1>
         <div className="w-[40rem] h-40 relative">
@@ -32,7 +32,6 @@ export function Hero() {
         </div>
       </div>
       <TypewriterEffectSmoothDemo />
-      <Description />
     </>
   );
 }
@@ -57,16 +56,16 @@ function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <div className="w-full absolute flex flex-col items-center justify-center h-[20rem] top-1/3 ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+    <div className="absolute w-full  flex flex-col items-center justify-center h-[20rem] top-[50vh] px-4">
+      <p className="text-neutral-600 dark:text-neutral-200 text-sm sm:text-base  ">
         The road to freedom starts from here
       </p>
       <TypewriterEffectSmooth words={words} />
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+      <div className="justify-center flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 w-full">
         <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
           Join Us
         </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
+        <button className=" h-10 rounded-xl bg-white text-black border border-black  text-sm md:w-24 ">
           Signup
         </button>
         <DocsButton />
@@ -75,9 +74,9 @@ function TypewriterEffectSmoothDemo() {
   );
 }
 
-function Description() {
+export function Description() {
   return (
-    <article className="absolute bottom-10 text-center w-full pb-40">
+    <article className="absolute  text-center w-full pb-40 bottom-[2vh]">
       <span className="text-3xl font-bold">What&apos;s In Bhasma? </span>
       <span className="text-2xl text-slate-400">
         Everything you need to make a secure app
@@ -85,14 +84,15 @@ function Description() {
     </article>
   );
 }
+
 function DocsButton() {
   return (
-    <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
+    <button className="h-12  bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block">
       <span className="absolute inset-0 overflow-hidden rounded-full">
         <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
       </span>
-      <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-        <span>{`Docs`}</span>
+      <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 justify-center">
+        <span className="text-lg">{`Docs`}</span>
         <svg
           width="16"
           height="16"
