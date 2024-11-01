@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { SkeletonOne } from "../ui/SkeletonOne";
 import { SkeletonThree } from "../ui/SkeletonThree";
