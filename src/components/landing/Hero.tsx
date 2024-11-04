@@ -2,6 +2,7 @@
 import React from "react";
 import { SparklesCore } from "../ui/Sparkles";
 import { TypewriterEffectSmooth } from "../ui/TypewriterEffect";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -62,9 +63,12 @@ function TypewriterEffectSmoothDemo() {
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="justify-center flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 w-full">
-        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-          Join Us
-        </button>
+        {/* for now we are redirecting to the dashboard */}
+        <Link href="/service/dashboard">
+          <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            Join Us
+          </button>
+        </Link>
         <button className=" h-10 rounded-xl bg-white text-black border border-black  text-sm md:w-24 ">
           Signup
         </button>

@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import { FeaturesSectionDemo } from "@/components/landing/Features";
 import { Hero } from "@/components/landing/Hero";
-import Warning from "@/components/ui/Warning";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <Hero />
       <FeaturesSectionDemo />
       <Footer />
-      <Warning />
+      {/* <Warning /> */}
     </>
   );
 }
